@@ -1,0 +1,38 @@
+<?php
+    if(isset($_GET['page'])){
+        $page = $_GET['page'];
+        if($page=="login"){
+            include_once("Login.html");
+        }
+        if($page=="information"){
+            include_once("Information.php");
+        }
+        if($page=="devices"){
+            include_once("Devices.php");
+        }
+        if($page=="accessories"){
+            include_once("Accessories.php");
+        }
+        if($page=="support"){
+            include_once("Support.php");
+        }
+        if($page=="administrator"){
+            include_once("Administrator.php");
+        }
+        if($page=="register"){
+            include_once("Register.php");
+        }
+        if($page=="update"){
+            include_once("Update.php");
+        }
+        if($page=="delete"){
+            include_once("Delete.php");
+        }
+        if($page=="add"){
+            include_once("Add.php");
+        }
+    }
+    else {
+        include_once("index.html");
+    }
+?>
